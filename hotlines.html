@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#172B55" />
+    <meta
+      name="description"
+      content="Philippine emergency communications directory for Golden Hour."
+    />
+    <title>Philippine Emergency Directory | Golden Hour</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css?v=7" />
+  </head>
+  <body data-page="hotlines">
+    <div id="offline-banner" class="offline-banner" role="status" hidden>
+      OFFLINE MODE: Hotline information may not reflect the latest updates.
+      Verify through official sources when internet access is available.
+    </div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="site-title" href="index.html" aria-label="Golden Hour home"
+        >Golden Hour</a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a
+        ><a href="first-aid.html" data-nav="first-aid">First Aid</a
+        ><a href="emergencies.html" data-nav="emergencies">Emergencies</a
+        ><a href="prepare.html" data-nav="prepare">Prepare</a
+        ><a href="hotlines.html" data-nav="hotlines">Hotlines</a>
+      </nav>
+    </header>
+    <main id="main-content" class="module-page">
+      <section class="page-intro guide-section module-hero">
+        <p class="eyebrow">Communications terminal / module 04</p>
+        <h1>Philippine Emergency Directory</h1>
+        <p>
+          Use this directory as a learning reference. Contact details and
+          availability can change, especially when viewed from an offline cache.
+        </p>
+        <div class="notice-strip">
+          <strong>VERIFY BEFORE RELYING</strong
+          ><span
+            >For immediate danger, use the appropriate current official
+            emergency channel.</span
+          >
+        </div>
+      </section>
+      <section class="guide-section">
+        <div class="module-tools">
+          <div>
+            <label class="select-label" for="hotline-category">Category</label
+            ><select id="hotline-category" class="terminal-select">
+              <option value="all">All listed services</option>
+              <option value="NATIONAL EMERGENCY">National emergency</option>
+              <option value="WEATHER">Weather</option>
+            </select>
+          </div>
+          <div>
+            <label class="select-label" for="hotline-search"
+              >Search directory</label
+            ><input
+              id="hotline-search"
+              class="terminal-input"
+              type="search"
+              placeholder="> search service..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div id="hotline-list" class="hotlines-grid" aria-live="polite"></div>
+      </section>
+      <section class="guide-section source-panel">
+        <h2>Directory source system</h2>
+        <p>
+          Every published contact has an identifiable official source link and a
+          last-verified date. Offline copies may become outdated; verify through
+          the responsible agency's official channels when internet access is
+          available.
+        </p>
+        <p class="small-note">
+          <a href="https://www.gov.ph/hotline-directory" rel="noreferrer"
+            >Official Philippine government hotline directory</a
+          >
+          ·
+          <a href="https://www.pagasa.dost.gov.ph/" rel="noreferrer"
+            >DOST-PAGASA</a
+          >
+          ·
+          <a href="https://ncmh.gov.ph/" rel="noreferrer"
+            >National Center for Mental Health</a
+          >
+          ·
+          <a href="https://www.deped.gov.ph/" rel="noreferrer"
+            >Department of Education</a
+          >
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>Golden Hour</strong><span>Learn. Prepare. Respond.</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="first-aid.html">First Aid</a
+        ><a href="emergencies.html">Emergencies</a
+        ><a href="prepare.html">Prepare</a><a href="hotlines.html">Hotlines</a>
+      </nav>
+      <span
+        >Golden Hour is an educational preparedness resource and does not
+        replace professional medical care or formal first-aid training.</span
+      >
+    </footer>
+    <script src="script.js?v=7"></script>
+  </body>
+</html>

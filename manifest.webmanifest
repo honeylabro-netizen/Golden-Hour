@@ -1,0 +1,9 @@
+{
+  "name": "Golden Hour Emergency Learning Guide",
+  "short_name": "Golden Hour",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#081127",
+  "theme_color": "#101d3d",
+  "description": "A Philippine-focused educational emergency preparedness guide."
+}

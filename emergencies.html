@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#172B55" />
+    <meta name="description" content="Golden Hour emergency hazard database." />
+    <title>Emergency Database | Golden Hour</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css?v=7" />
+  </head>
+  <body data-page="emergencies" data-module="emergencies">
+    <div id="offline-banner" class="offline-banner" role="status" hidden>
+      OFFLINE MODE: Hotline information may not reflect the latest updates.
+      Verify through official sources when internet access is available.
+    </div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="site-title" href="index.html" aria-label="Golden Hour home"
+        >Golden Hour</a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a
+        ><a href="first-aid.html" data-nav="first-aid">First Aid</a
+        ><a href="emergencies.html" data-nav="emergencies">Emergencies</a
+        ><a href="prepare.html" data-nav="prepare">Prepare</a
+        ><a href="hotlines.html" data-nav="hotlines">Hotlines</a>
+      </nav>
+    </header>
+    <main id="main-content" class="module-page">
+      <section class="page-intro guide-section module-hero">
+        <p class="eyebrow">Hazard database / module 02</p>
+        <h1>Emergencies</h1>
+        <p>
+          Recognize common hazards, move toward safety, communicate clearly, and
+          follow current instructions from Philippine authorities.
+        </p>
+        <div class="notice-strip">
+          <strong>RESPONSE ORDER</strong
+          ><span
+            >Safety first. Alert others. Contact appropriate responders. Follow
+            official instructions.</span
+          >
+        </div>
+      </section>
+      <section class="featured-learning" aria-labelledby="start-here-title">
+        <div class="featured-copy">
+          <p class="eyebrow">Start here / quick read</p>
+          <h2 id="start-here-title">What should happen first?</h2>
+          <p>
+            Priorities differ by situation, but a useful learning frame is to
+            check immediate safety, recognize the danger, alert appropriate
+            help, and follow current official instructions.
+          </p>
+          <a
+            class="cta-button"
+            href="emergencies.html?topic=unresponsive-person"
+            >LEARN THE BASICS <span aria-hidden="true">►</span></a
+          >
+        </div>
+        <div class="featured-signal" aria-hidden="true">
+          <span>01</span><strong>CHECK</strong><span>02</span
+          ><strong>CALL</strong><span>03</span><strong>FOLLOW</strong>
+        </div>
+      </section>
+      <section
+        id="guide-library"
+        class="guide-section"
+        aria-labelledby="library-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Emergency type index</p>
+          <h2 id="library-title">Hazard database</h2>
+          <p>
+            Open a hazard for a full reading view. Search recognition, response,
+            safety, and recovery language.
+          </p>
+        </div>
+        <div class="module-tools">
+          <label class="sr-only" for="guide-search"
+            >Search emergency guides</label
+          ><input
+            id="guide-search"
+            class="terminal-input"
+            type="search"
+            placeholder="> search hazard database..."
+            autocomplete="off"
+          />
+          <div
+            class="filter-tabs"
+            role="group"
+            aria-label="Emergency categories"
+          >
+            <button
+              class="filter-tab active"
+              type="button"
+              data-guide-filter="all"
+            >
+              All</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-guide-filter="natural"
+            >
+              Natural hazards</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-guide-filter="community"
+            >
+              Community</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-guide-filter="disaster"
+            >
+              Disaster</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-guide-filter="safety"
+            >
+              Safety
+            </button>
+          </div>
+        </div>
+        <div id="emergency-list" class="guide-grid"></div>
+        <div id="guide-empty" class="info-box" hidden>
+          <strong>NO MATCH FOUND</strong>
+          <p>Try another keyword or category.</p>
+        </div>
+      </section>
+      <section class="guide-section archive-section">
+        <div class="section-header">
+          <p class="eyebrow">Safety literacy</p>
+          <h2>Common emergency mistakes</h2>
+          <p>
+            Reliable response starts with avoiding extra exposure and unverified
+            instructions.
+          </p>
+        </div>
+        <div class="mistake-grid">
+          <article class="mistake-card">
+            <span class="tag">THE MISTAKE</span>
+            <h3>Going back into danger</h3>
+            <p>
+              <strong>Why it matters:</strong> Re-entry can expose people to
+              fire, smoke, structural damage, or other hazards.
+            </p>
+            <p>
+              <strong>Do instead:</strong> Stay in a safe location and wait for
+              authorities to give an all-clear.
+            </p>
+            <p class="small-note">
+              <strong>Source:</strong>
+              <a
+                href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/fire.html"
+                rel="noreferrer"
+                >American Red Cross fire safety</a
+              >
+            </p>
+          </article>
+          <article class="mistake-card">
+            <span class="tag">THE MISTAKE</span>
+            <h3>Relying on rumors</h3>
+            <p>
+              <strong>Why it matters:</strong> Incorrect warnings can send
+              people toward hazards or delay evacuation.
+            </p>
+            <p>
+              <strong>Do instead:</strong> Use current official warnings and
+              local emergency instructions.
+            </p>
+            <p class="small-note">
+              <strong>Source:</strong>
+              <a href="https://www.pagasa.dost.gov.ph/" rel="noreferrer"
+                >DOST-PAGASA official information</a
+              >
+            </p>
+          </article>
+          <article class="mistake-card">
+            <span class="tag">THE MISTAKE</span>
+            <h3>Investigating a suspected gas leak</h3>
+            <p>
+              <strong>Why it matters:</strong> A suspected leak can create an
+              unsafe environment.
+            </p>
+            <p>
+              <strong>Do instead:</strong> Leave if safe, avoid creating
+              ignition sources, and contact appropriate responders.
+            </p>
+            <p class="small-note">
+              <strong>Source:</strong> Follow local fire and public-safety
+              instructions.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="guide-section source-panel">
+        <h2>Source and review</h2>
+        <p>
+          Natural-hazard entries use official Philippine agency references where
+          available. Last reviewed: September 18, 2026.
+        </p>
+        <p class="small-note">
+          <a href="https://www.pagasa.dost.gov.ph/" rel="noreferrer">PAGASA</a>
+          ·
+          <a href="https://phivolcs.dost.gov.ph/" rel="noreferrer">PHIVOLCS</a>
+          · <a href="https://ndrrmc.gov.ph/" rel="noreferrer">NDRRMC</a>
+        </p>
+      </section>
+      <section
+        id="guide-reader"
+        class="guide-section guide-reader"
+        hidden
+        aria-live="polite"
+      ></section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>Golden Hour</strong><span>Learn. Prepare. Respond.</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="first-aid.html">First Aid</a
+        ><a href="emergencies.html">Emergencies</a
+        ><a href="prepare.html">Prepare</a><a href="hotlines.html">Hotlines</a>
+      </nav>
+      <span
+        >Golden Hour is an educational preparedness resource and does not
+        replace professional medical care or formal first-aid training.</span
+      >
+    </footer>
+    <script src="script.js?v=7"></script>
+  </body>
+</html>

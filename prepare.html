@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#172B55" />
+    <meta
+      name="description"
+      content="Golden Hour preparedness planning module."
+    />
+    <title>Prepare | Golden Hour</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css?v=7" />
+  </head>
+  <body data-page="prepare">
+    <div id="offline-banner" class="offline-banner" role="status" hidden>
+      OFFLINE MODE: Hotline information may not reflect the latest updates.
+      Verify through official sources when internet access is available.
+    </div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="site-title" href="index.html" aria-label="Golden Hour home"
+        >Golden Hour</a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a
+        ><a href="first-aid.html" data-nav="first-aid">First Aid</a
+        ><a href="emergencies.html" data-nav="emergencies">Emergencies</a
+        ><a href="prepare.html" data-nav="prepare">Prepare</a
+        ><a href="hotlines.html" data-nav="hotlines">Hotlines</a>
+      </nav>
+    </header>
+    <main id="main-content" class="module-page">
+      <section class="page-intro guide-section module-hero">
+        <p class="eyebrow">Planning screen / module 03</p>
+        <h1>Prepare</h1>
+        <p>
+          Turn general preparedness ideas into a plan for home, school, family,
+          travel, and the needs of people and pets.
+        </p>
+        <div class="notice-strip">
+          <strong>LOCALIZE YOUR PLAN</strong
+          ><span
+            >Confirm routes, contacts, assembly areas, and official instructions
+            for your own location.</span
+          >
+        </div>
+      </section>
+      <section class="guide-section planning-grid">
+        <article class="planning-panel">
+          <span class="tag">HOME</span>
+          <h2>Emergency kit</h2>
+          <p>
+            Consider supplies for water, food, lighting, communication, first
+            aid, medication, hygiene, documents, and household-specific needs.
+          </p>
+        </article>
+        <article class="planning-panel">
+          <span class="tag">SCHOOL</span>
+          <h2>School readiness</h2>
+          <p>
+            Know evacuation routes, assembly areas, official communication
+            channels, drill expectations, and accessibility arrangements.
+          </p>
+        </article>
+        <article class="planning-panel">
+          <span class="tag">FAMILY</span>
+          <h2>Communication plan</h2>
+          <p>
+            Choose contacts, a meeting point, an out-of-area contact if
+            appropriate, and a way to account for household members.
+          </p>
+        </article>
+        <article class="planning-panel">
+          <span class="tag">TRAVEL</span>
+          <h2>Travel and pets</h2>
+          <p>
+            Consider destination hazards, transport contacts, medication,
+            mobility needs, and safe arrangements for pets.
+          </p>
+        </article>
+        <article class="planning-panel">
+          <span class="tag">BACKUP</span>
+          <h2>Documents and power</h2>
+          <p>
+            Keep important information accessible and plan for safe lighting,
+            charging, and communication when power is unavailable.
+          </p>
+        </article>
+        <article class="planning-panel">
+          <span class="tag">EVACUATION</span>
+          <h2>Routes and meeting point</h2>
+          <p>
+            Learn official routes and identify a safe meeting place. Follow
+            local authority instructions during an event.
+          </p>
+        </article>
+      </section>
+      <section
+        class="guide-section checklist-card"
+        aria-labelledby="checklist-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Progress saved on this device</p>
+          <h2 id="checklist-title">Preparedness checklist</h2>
+          <p>
+            Check items as you plan. Progress is stored locally in this browser;
+            no personal information is collected.
+          </p>
+        </div>
+        <div class="progress-line">
+          <span id="checklist-progress-text">0% complete</span
+          ><progress id="checklist-progress" value="0" max="100">0%</progress
+          ><span id="checklist-count">0 / 0 COMPLETE</span
+          ><button id="reset-checklist" class="text-button" type="button">
+            Reset
+          </button>
+        </div>
+        <div id="checklist"></div>
+      </section>
+      <section class="scenario terminal-card" aria-labelledby="scenario-title">
+        <div>
+          <p class="eyebrow">Scenario practice</p>
+          <h2 id="scenario-title">Scenario 01</h2>
+          <p id="scenario-question"></p>
+        </div>
+        <div id="scenario-options" class="scenario-options"></div>
+        <div id="scenario-feedback" class="feedback" aria-live="polite"></div>
+        <button id="next-scenario" class="cta-button" type="button" hidden>
+          Try another scenario
+        </button>
+      </section>
+      <section class="guide-section source-panel">
+        <h2>Source and review</h2>
+        <p>
+          Preparedness planning follows the general approach used by recognized
+          emergency-preparedness organizations. Last reviewed: September 18,
+          2026.
+        </p>
+        <p class="small-note">
+          <a href="https://www.ready.gov/" rel="noreferrer"
+            >Ready.gov preparedness resources</a
+          >
+          · <a href="https://ndrrmc.gov.ph/" rel="noreferrer">NDRRMC</a>
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>Golden Hour</strong><span>Learn. Prepare. Respond.</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="first-aid.html">First Aid</a
+        ><a href="emergencies.html">Emergencies</a
+        ><a href="prepare.html">Prepare</a><a href="hotlines.html">Hotlines</a>
+      </nav>
+      <span
+        >Golden Hour is an educational preparedness resource and does not
+        replace professional medical care or formal first-aid training.</span
+      >
+    </footer>
+    <script src="script.js?v=7"></script>
+  </body>
+</html>

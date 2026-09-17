@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#172B55" />
+    <meta
+      name="description"
+      content="Golden Hour first-aid knowledge archive."
+    />
+    <title>First Aid Archive | Golden Hour</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css?v=7" />
+  </head>
+  <body data-page="first-aid" data-module="first-aid">
+    <div id="offline-banner" class="offline-banner" role="status" hidden>
+      OFFLINE MODE: Hotline information may not reflect the latest updates.
+      Verify through official sources when internet access is available.
+    </div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="site-title" href="index.html" aria-label="Golden Hour home"
+        >Golden Hour</a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a
+        ><a href="first-aid.html" data-nav="first-aid">First Aid</a
+        ><a href="emergencies.html" data-nav="emergencies">Emergencies</a
+        ><a href="prepare.html" data-nav="prepare">Prepare</a
+        ><a href="hotlines.html" data-nav="hotlines">Hotlines</a>
+      </nav>
+    </header>
+    <main id="main-content" class="module-page">
+      <section class="page-intro guide-section module-hero">
+        <p class="eyebrow">Knowledge archive / module 01</p>
+        <h1>First Aid</h1>
+        <p>
+          Build a calm, safety-first understanding of common injuries and
+          medical emergencies. These lessons are for public education and do not
+          replace formal training.
+        </p>
+        <div class="notice-strip">
+          <strong>LEARNING LEVEL: PUBLIC</strong
+          ><span
+            >Check the scene, call for appropriate help, and act only within
+            your training.</span
+          >
+        </div>
+      </section>
+      <section
+        id="guide-library"
+        class="guide-section"
+        aria-labelledby="library-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Archive index</p>
+          <h2 id="library-title">First-aid learning library</h2>
+          <p>
+            Choose a topic for a full reading view. Search across signs,
+            actions, prevention, and keywords.
+          </p>
+        </div>
+        <div class="module-tools">
+          <label class="sr-only" for="guide-search"
+            >Search first-aid guides</label
+          ><input
+            id="guide-search"
+            class="terminal-input"
+            type="search"
+            placeholder="> search first-aid archive..."
+            autocomplete="off"
+          />
+          <div
+            class="filter-tabs"
+            role="group"
+            aria-label="First-aid categories"
+          >
+            <button
+              class="filter-tab active"
+              type="button"
+              data-guide-filter="all"
+            >
+              All</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-guide-filter="common"
+            >
+              Common</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-guide-filter="less-common"
+            >
+              Less common
+            </button>
+          </div>
+        </div>
+        <div id="first-aid-list" class="guide-grid"></div>
+        <div id="guide-empty" class="info-box" hidden>
+          <strong>NO MATCH FOUND</strong>
+          <p>Try another keyword or category.</p>
+        </div>
+      </section>
+      <section class="guide-section archive-section">
+        <div class="section-header">
+          <p class="eyebrow">Safety literacy</p>
+          <h2>Common mistakes</h2>
+          <p>
+            Slow down before using a familiar home remedy or moving an injured
+            person.
+          </p>
+        </div>
+        <div class="mistake-grid">
+          <article class="mistake-card">
+            <span class="tag">THE MISTAKE</span>
+            <h3>Delaying emergency help</h3>
+            <p>
+              <strong>Why it matters:</strong> A serious or life-threatening
+              condition needs professional assessment and response.
+            </p>
+            <p>
+              <strong>Do instead:</strong> Check scene safety, call appropriate
+              emergency services, and follow dispatcher instructions.
+            </p>
+            <p class="small-note">
+              <strong>Source:</strong>
+              <a
+                href="https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps"
+                rel="noreferrer"
+                >American Red Cross First Aid Steps</a
+              >
+            </p>
+          </article>
+          <article class="mistake-card">
+            <span class="tag">THE MISTAKE</span>
+            <h3>Moving someone unnecessarily</h3>
+            <p>
+              <strong>Why it matters:</strong> Movement can create additional
+              risk when a head, neck, or spinal injury is possible.
+            </p>
+            <p>
+              <strong>Do instead:</strong> Keep the person still unless there is
+              immediate danger, and get qualified help.
+            </p>
+            <p class="small-note">
+              <strong>Source:</strong>
+              <a
+                href="https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps"
+                rel="noreferrer"
+                >American Red Cross First Aid Steps</a
+              >
+            </p>
+          </article>
+          <article class="mistake-card">
+            <span class="tag">THE MISTAKE</span>
+            <h3>Giving food or drink to an unconscious person</h3>
+            <p>
+              <strong>Why it matters:</strong> A person who is not fully awake
+              may not be able to safely swallow.
+            </p>
+            <p>
+              <strong>Do instead:</strong> Check responsiveness and breathing,
+              call for help, and follow dispatcher instructions.
+            </p>
+            <p class="small-note">
+              <strong>Source:</strong>
+              <a
+                href="https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps"
+                rel="noreferrer"
+                >American Red Cross First Aid Steps</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="guide-section source-panel">
+        <h2>Source and review</h2>
+        <p>
+          Guide entries are educational summaries built around the public
+          first-aid sequence described by the American Red Cross. Last reviewed:
+          September 18, 2026.
+        </p>
+        <p class="small-note">
+          <a
+            href="https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps"
+            rel="noreferrer"
+            >Open the American Red Cross First Aid Steps source</a
+          >
+        </p>
+      </section>
+      <section
+        id="guide-reader"
+        class="guide-section guide-reader"
+        hidden
+        aria-live="polite"
+      ></section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <strong>Golden Hour</strong><span>Learn. Prepare. Respond.</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="first-aid.html">First Aid</a
+        ><a href="emergencies.html">Emergencies</a
+        ><a href="prepare.html">Prepare</a><a href="hotlines.html">Hotlines</a>
+      </nav>
+      <span
+        >Golden Hour is an educational preparedness resource and does not
+        replace professional medical care or formal first-aid training.</span
+      >
+    </footer>
+    <script src="script.js?v=7"></script>
+  </body>
+</html>

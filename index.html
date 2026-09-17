@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#050708" />
+    <meta name="theme-color" content="#172B55" />
     <meta
       name="description"
-      content="Golden Hour is an educational emergency preparedness and first-aid resource."
+      content="Golden Hour is a Philippine-focused emergency learning system."
     />
-    <title>Golden Hour | Emergency preparedness</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title>Golden Hour | Emergency Learning System</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css?v=7" />
   </head>
-  <body>
+  <body class="home-screen" data-page="home">
+    <div id="offline-banner" class="offline-banner" role="status" hidden>
+      OFFLINE MODE: Hotline information may not reflect the latest updates.
+      Verify through official sources when internet access is available.
+    </div>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <header class="site-header">
-      <a class="site-title" href="#top" aria-label="Golden Hour home"
+    <header class="site-header game-header">
+      <a class="site-title" href="index.html" aria-label="Golden Hour home"
         >Golden Hour</a
-      ><button
+      >
+      <button
         class="menu-toggle"
         type="button"
         aria-expanded="false"
@@ -31,51 +31,47 @@
         Menu
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#first-aid">First Aid</a><a href="#emergencies">Emergencies</a
-        ><a href="#prepare">Prepare</a><a href="#hotlines">Hotlines</a>
+        <a href="index.html" data-nav="home">Home</a
+        ><a href="first-aid.html" data-nav="first-aid">First Aid</a
+        ><a href="emergencies.html" data-nav="emergencies">Emergencies</a
+        ><a href="prepare.html" data-nav="prepare">Prepare</a
+        ><a href="hotlines.html" data-nav="hotlines">Hotlines</a>
       </nav>
     </header>
-    <main id="main-content">
-      <section id="top" class="hero guide-section">
-        <div class="hero-content">
-          <p class="eyebrow">Emergency knowledge when every second matters</p>
-          <h1>Learn.<br />Prepare.<br />Respond.</h1>
-          <p class="tagline">
-            Practical emergency knowledge for the moments when knowing what to
-            do matters most.
-          </p>
-          <div class="hero-actions">
-            <a class="cta-button" href="#first-aid">Start learning</a
-            ><a class="cta-button cta-secondary" href="#hotlines"
-              >View hotlines</a
-            >
-          </div>
+    <main id="main-content" class="main-menu">
+      <section class="title-screen" aria-labelledby="system-title">
+        <div class="title-scanline" aria-hidden="true"></div>
+        <p class="system-kicker">PHILIPPINE EMERGENCY LEARNING SYSTEM</p>
+        <h1 id="system-title" class="game-logo">
+          <span>GOLDEN</span><span>HOUR</span>
+        </h1>
+        <p class="title-subtitle">EMERGENCY LEARNING SYSTEM</p>
+        <p class="mission-line">Learn. Prepare. Respond.</p>
+        <div class="title-rule" aria-hidden="true">
+          <span></span><i></i><span></span>
         </div>
-        <div class="system-panel" aria-label="System status">
-          <span class="system-label">System ready</span
-          ><strong>Know what to do<br />before it happens.</strong
-          ><span class="status-line"
-            ><span class="status-dot"></span> Educational resource online</span
-          >
-        </div>
+        <p class="title-copy">
+          A practical learning guide for students, families, and the wider
+          community.
+        </p>
       </section>
       <section
-        class="first-minute guide-section"
+        class="first-minute-station"
         aria-labelledby="first-minute-title"
       >
-        <div class="section-header">
-          <p class="eyebrow">Core concept</p>
-          <h2 id="first-minute-title">First 60 seconds</h2>
+        <div class="station-heading">
+          <p class="eyebrow">LEARNING STATION / 01</p>
+          <h2 id="first-minute-title">FIRST 60 SECONDS</h2>
           <p>
             The first minute can be critical. Know your first actions. This is a
             learning visualization, not a countdown.
           </p>
         </div>
-        <div class="minute-grid">
-          <div class="minute-ring" aria-hidden="true">
+        <div class="minute-console">
+          <div class="minute-orb" aria-hidden="true">
             <strong>60</strong><span>SECONDS</span>
           </div>
-          <ol class="minute-steps">
+          <ol class="minute-sequence">
             <li><b>01</b><span>Stay as calm as possible.</span></li>
             <li><b>02</b><span>Check whether the area is safe.</span></li>
             <li><b>03</b><span>Assess the immediate danger.</span></li>
@@ -85,172 +81,161 @@
           </ol>
         </div>
       </section>
-      <section
-        class="quick-actions guide-section"
-        aria-labelledby="actions-title"
-      >
-        <div class="section-header">
-          <p class="eyebrow">Choose a path</p>
-          <h2 id="actions-title">What do you need?</h2>
-        </div>
-        <div class="features-grid">
-          <a class="feature-card" href="#first-aid"
-            ><span class="feature-icon">+</span>
-            <h3>First aid</h3>
-            <p>Learn practical, general response steps.</p></a
-          ><a class="feature-card" href="#emergencies"
-            ><span class="feature-icon">!</span>
-            <h3>Emergencies</h3>
-            <p>Find the right next step for common situations.</p></a
-          ><a class="feature-card" href="#hotlines"
-            ><span class="feature-icon">☎</span>
-            <h3>Hotlines</h3>
-            <p>Review region-specific emergency contacts.</p></a
-          ><a class="feature-card" href="#prepare"
-            ><span class="feature-icon">✓</span>
-            <h3>Prepare</h3>
-            <p>Build a plan before an emergency happens.</p></a
-          >
-        </div>
-      </section>
-      <section
-        id="first-aid"
-        class="guide-section"
-        aria-labelledby="first-aid-title"
-      >
-        <div class="section-header">
-          <p class="eyebrow">Learning library / 01</p>
-          <h2 id="first-aid-title">First aid guides</h2>
+      <section class="cpr-station" aria-labelledby="cpr-title">
+        <div class="station-heading">
+          <p class="eyebrow">LEARNING STATION / 02</p>
+          <h2 id="cpr-title">CPR / SAVE A LIFE</h2>
           <p>
-            General educational information. For severe, life-threatening, or
-            unclear situations, contact local emergency services immediately.
+            When cardiac arrest happens, fast action matters. Learning the
+            basics can help a bystander act instead of freezing or waiting.
           </p>
         </div>
-        <div id="first-aid-list" class="guide-grid"></div>
-      </section>
-      <section
-        id="emergencies"
-        class="guide-section"
-        aria-labelledby="emergencies-title"
-      >
-        <div class="section-header">
-          <p class="eyebrow">Learning library / 02</p>
-          <h2 id="emergencies-title">Emergency guide</h2>
-          <p>
-            Put the most important action first, then learn what comes next.
-          </p>
-        </div>
-        <div id="emergency-list" class="guide-grid"></div>
-      </section>
-      <section
-        id="prepare"
-        class="guide-section"
-        aria-labelledby="prepare-title"
-      >
-        <div class="section-header">
-          <p class="eyebrow">Before it happens / 03</p>
-          <h2 id="prepare-title">Prepare before it happens</h2>
-          <p>
-            Build a plan that fits your household, school, workplace, and local
-            hazards.
-          </p>
-        </div>
-        <div class="prepare-layout">
-          <div class="terminal-card">
-            <h3>Emergency kit</h3>
-            <ul class="kit-list">
-              <li>Water and shelf-stable food</li>
-              <li>Flashlight, batteries, and power bank</li>
-              <li>First-aid supplies and necessary medication</li>
-              <li>Important documents and contact information</li>
-              <li>Whistle and basic hygiene supplies</li>
-            </ul>
-            <p class="small-note">
-              This is a starting list, not a universally sufficient kit.
-            </p>
+        <div class="cpr-console">
+          <div class="cpr-signal" aria-label="Call, push, help">
+            <span>CALL</span><i>↓</i><span>PUSH</span><i>↓</i><span>HELP</span>
           </div>
-          <div class="terminal-card checklist-card">
-            <h3>Preparedness checklist</h3>
-            <p class="small-note">
-              Stored on this device. No personal information is collected.
-            </p>
-            <div id="checklist"></div>
-          </div>
+          <ol class="cpr-steps">
+            <li>
+              <b>STEP 01</b><strong>CALL FOR EMERGENCY HELP</strong>
+              <p>
+                Call <em>911</em> in the Philippines, or have another person
+                call.
+              </p>
+            </li>
+            <li>
+              <b>STEP 02</b><strong>CHECK RESPONSE AND NORMAL BREATHING</strong>
+              <p>
+                If someone is unresponsive and not breathing normally, treat it
+                as a medical emergency.
+              </p>
+            </li>
+            <li>
+              <b>STEP 03</b><strong>START HANDS-ONLY CPR</strong>
+              <p>
+                For a suddenly collapsed teen or adult, push hard and fast in
+                the center of the chest at
+                <em>100–120 compressions per minute</em>.
+              </p>
+            </li>
+            <li>
+              <b>STEP 04</b><strong>USE AN AED</strong>
+              <p>
+                Turn it on and follow its spoken or visual prompts, alongside
+                dispatcher instructions.
+              </p>
+            </li>
+            <li>
+              <b>STEP 05</b><strong>KEEP GOING</strong>
+              <p>
+                Continue until professional responders take over or the person
+                shows signs of recovery.
+              </p>
+            </li>
+          </ol>
         </div>
-        <div class="scenario terminal-card">
-          <div>
-            <p class="eyebrow">Learn a scenario</p>
-            <h3 id="scenario-title">Scenario 01</h3>
-            <p id="scenario-question"></p>
-          </div>
-          <div id="scenario-options" class="scenario-options"></div>
-          <div id="scenario-feedback" class="feedback" aria-live="polite"></div>
-          <button id="next-scenario" class="cta-button" type="button" hidden>
-            Try another scenario
-          </button>
-        </div>
-      </section>
-      <section
-        id="hotlines"
-        class="guide-section"
-        aria-labelledby="hotlines-title"
-      >
-        <div class="section-header">
-          <p class="eyebrow">Verified directory / 04</p>
-          <h2 id="hotlines-title">Emergency hotlines</h2>
+        <aside class="why-cpr">
+          <strong>WHY CPR MATTERS</strong>
           <p>
-            Select a region to view contacts. Numbers are shown only where a
-            source has been identified.
+            Cardiac arrest can make a person suddenly unresponsive and stop
+            breathing normally. CPR helps maintain blood flow while further
+            emergency treatment is arranged.
+          </p>
+          <p class="learning-note">
+            <b>LEARNING NOTE:</b> This is a quick educational reminder, not a
+            substitute for hands-on CPR/AED training. In a real emergency, call
+            emergency services and follow dispatcher instructions.
+          </p>
+          <p class="source-note">
+            Source:
+            <a
+              href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+              rel="noreferrer"
+              >American Heart Association CPR guidance</a
+            >. Last reviewed: September 18, 2026.
+          </p>
+        </aside>
+      </section>
+      <section class="module-console" aria-labelledby="module-title">
+        <div class="console-heading">
+          <p class="eyebrow">MAIN MENU / SELECT A MODULE</p>
+          <h2 id="module-title">Choose your path</h2>
+          <p class="menu-instruction">
+            <span class="blink-marker" aria-hidden="true">►</span> Hover or
+            focus a module to select it. Press enter to continue.
           </p>
         </div>
-        <label class="select-label" for="location-select">Location</label
-        ><select id="location-select" class="terminal-select">
-          <option value="philippines">Philippines</option>
-          <option value="unverified">Other region / verify locally</option>
-        </select>
-        <div id="hotline-list" class="hotlines-grid"></div>
-        <p class="last-verified">
-          Last verified: source review required before publication
-        </p>
-      </section>
-      <section
-        class="search-section guide-section"
-        aria-labelledby="search-title"
-      >
-        <div class="section-header">
-          <p class="eyebrow">Knowledge base</p>
-          <h2 id="search-title">Search emergency guides</h2>
+        <div class="module-grid">
+          <a class="module-card module-first-aid" href="first-aid.html"
+            ><span class="module-corner" aria-hidden="true">01</span
+            ><span class="module-icon" aria-hidden="true">+</span
+            ><span class="module-label">FIRST AID</span
+            ><span class="module-description"
+              >Recognize common injuries and learn cautious response
+              principles.</span
+            ><span class="module-enter">[ ENTER MODULE ]</span
+            ><span class="selection-marker" aria-hidden="true">►</span
+            ><span class="pixel pixel-a" aria-hidden="true"></span
+            ><span class="pixel pixel-b" aria-hidden="true"></span
+          ></a>
+          <a class="module-card module-emergencies" href="emergencies.html"
+            ><span class="module-corner" aria-hidden="true">02</span
+            ><span class="module-icon" aria-hidden="true">!</span
+            ><span class="module-label">EMERGENCIES</span
+            ><span class="module-description"
+              >Understand hazards, safety actions, evacuation, and
+              mistakes.</span
+            ><span class="module-enter">[ ENTER MODULE ]</span
+            ><span class="selection-marker" aria-hidden="true">►</span
+            ><span class="pixel pixel-a" aria-hidden="true"></span
+            ><span class="pixel pixel-b" aria-hidden="true"></span
+          ></a>
+          <a class="module-card module-prepare" href="prepare.html"
+            ><span class="module-corner" aria-hidden="true">03</span
+            ><span class="module-icon" aria-hidden="true">✓</span
+            ><span class="module-label">PREPARE</span
+            ><span class="module-description"
+              >Build a kit, make a plan, and practice decisions before
+              danger.</span
+            ><span class="module-enter">[ ENTER MODULE ]</span
+            ><span class="selection-marker" aria-hidden="true">►</span
+            ><span class="pixel pixel-a" aria-hidden="true"></span
+            ><span class="pixel pixel-b" aria-hidden="true"></span
+          ></a>
+          <a class="module-card module-hotlines" href="hotlines.html"
+            ><span class="module-corner" aria-hidden="true">04</span
+            ><span class="module-icon" aria-hidden="true">☎</span
+            ><span class="module-label">HOTLINES</span
+            ><span class="module-description"
+              >Browse Philippine contacts with source and review status.</span
+            ><span class="module-enter">[ ENTER MODULE ]</span
+            ><span class="selection-marker" aria-hidden="true">►</span
+            ><span class="pixel pixel-a" aria-hidden="true"></span
+            ><span class="pixel pixel-b" aria-hidden="true"></span
+          ></a>
         </div>
-        <label class="sr-only" for="search-input"
-          >Search first aid, emergencies, preparedness, and hotlines</label
-        ><input
-          id="search-input"
-          class="terminal-input"
-          type="search"
-          placeholder="> type to search..."
-          autocomplete="off"
-        />
-        <div
-          id="search-results"
-          class="search-results"
-          aria-live="polite"
-        ></div>
       </section>
-      <aside class="disclaimer info-box" aria-labelledby="disclaimer-title">
-        <h2 id="disclaimer-title">Important</h2>
-        <p>
-          Golden Hour is an educational preparedness resource. It does not
-          replace professional medical care, emergency dispatchers, trained
-          first responders, or formal first-aid training. In a serious or
-          life-threatening emergency, contact local emergency services and
-          follow qualified instructions.
-        </p>
-      </aside>
+      <section class="system-status" aria-label="System status">
+        <span>SYSTEM: <b>ONLINE</b></span
+        ><span>MODULES: <b>04</b></span
+        ><span>REGION: <b>PHILIPPINES</b></span
+        ><span>PWA: <b>CONFIGURED</b></span>
+      </section>
+      <p class="home-disclaimer">
+        Educational resource, not emergency dispatch. For serious or
+        life-threatening emergencies, contact appropriate emergency services.
+      </p>
     </main>
-    <footer class="site-footer">
-      <strong>Golden Hour</strong><span>Learn. Prepare. Respond.</span
-      ><span>Educational resource, not emergency dispatch.</span>
+    <footer class="site-footer game-footer">
+      <div>
+        <strong>GOLDEN HOUR</strong><span>Learn. Prepare. Respond.</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="first-aid.html">First Aid</a
+        ><a href="emergencies.html">Emergencies</a
+        ><a href="prepare.html">Prepare</a><a href="hotlines.html">Hotlines</a>
+      </nav>
+      <span>v1.0 / EDUCATIONAL SYSTEM</span>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js?v=7"></script>
   </body>
 </html>
