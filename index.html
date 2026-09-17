@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050708" />
+    <meta
+      name="description"
+      content="Golden Hour is an educational emergency preparedness and first-aid resource."
+    />
+    <title>Golden Hour | Emergency preparedness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="site-title" href="#top" aria-label="Golden Hour home"
+        >Golden Hour</a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#first-aid">First Aid</a><a href="#emergencies">Emergencies</a
+        ><a href="#prepare">Prepare</a><a href="#hotlines">Hotlines</a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="top" class="hero guide-section">
+        <div class="hero-content">
+          <p class="eyebrow">Emergency knowledge when every second matters</p>
+          <h1>Learn.<br />Prepare.<br />Respond.</h1>
+          <p class="tagline">
+            Practical emergency knowledge for the moments when knowing what to
+            do matters most.
+          </p>
+          <div class="hero-actions">
+            <a class="cta-button" href="#first-aid">Start learning</a
+            ><a class="cta-button cta-secondary" href="#hotlines"
+              >View hotlines</a
+            >
+          </div>
+        </div>
+        <div class="system-panel" aria-label="System status">
+          <span class="system-label">System ready</span
+          ><strong>Know what to do<br />before it happens.</strong
+          ><span class="status-line"
+            ><span class="status-dot"></span> Educational resource online</span
+          >
+        </div>
+      </section>
+      <section
+        class="first-minute guide-section"
+        aria-labelledby="first-minute-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Core concept</p>
+          <h2 id="first-minute-title">First 60 seconds</h2>
+          <p>
+            The first minute can be critical. Know your first actions. This is a
+            learning visualization, not a countdown.
+          </p>
+        </div>
+        <div class="minute-grid">
+          <div class="minute-ring" aria-hidden="true">
+            <strong>60</strong><span>SECONDS</span>
+          </div>
+          <ol class="minute-steps">
+            <li><b>01</b><span>Stay as calm as possible.</span></li>
+            <li><b>02</b><span>Check whether the area is safe.</span></li>
+            <li><b>03</b><span>Assess the immediate danger.</span></li>
+            <li><b>04</b><span>Call appropriate emergency services.</span></li>
+            <li><b>05</b><span>Give basic help only when safe.</span></li>
+            <li><b>06</b><span>Follow dispatcher instructions.</span></li>
+          </ol>
+        </div>
+      </section>
+      <section
+        class="quick-actions guide-section"
+        aria-labelledby="actions-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Choose a path</p>
+          <h2 id="actions-title">What do you need?</h2>
+        </div>
+        <div class="features-grid">
+          <a class="feature-card" href="#first-aid"
+            ><span class="feature-icon">+</span>
+            <h3>First aid</h3>
+            <p>Learn practical, general response steps.</p></a
+          ><a class="feature-card" href="#emergencies"
+            ><span class="feature-icon">!</span>
+            <h3>Emergencies</h3>
+            <p>Find the right next step for common situations.</p></a
+          ><a class="feature-card" href="#hotlines"
+            ><span class="feature-icon">☎</span>
+            <h3>Hotlines</h3>
+            <p>Review region-specific emergency contacts.</p></a
+          ><a class="feature-card" href="#prepare"
+            ><span class="feature-icon">✓</span>
+            <h3>Prepare</h3>
+            <p>Build a plan before an emergency happens.</p></a
+          >
+        </div>
+      </section>
+      <section
+        id="first-aid"
+        class="guide-section"
+        aria-labelledby="first-aid-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Learning library / 01</p>
+          <h2 id="first-aid-title">First aid guides</h2>
+          <p>
+            General educational information. For severe, life-threatening, or
+            unclear situations, contact local emergency services immediately.
+          </p>
+        </div>
+        <div id="first-aid-list" class="guide-grid"></div>
+      </section>
+      <section
+        id="emergencies"
+        class="guide-section"
+        aria-labelledby="emergencies-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Learning library / 02</p>
+          <h2 id="emergencies-title">Emergency guide</h2>
+          <p>
+            Put the most important action first, then learn what comes next.
+          </p>
+        </div>
+        <div id="emergency-list" class="guide-grid"></div>
+      </section>
+      <section
+        id="prepare"
+        class="guide-section"
+        aria-labelledby="prepare-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Before it happens / 03</p>
+          <h2 id="prepare-title">Prepare before it happens</h2>
+          <p>
+            Build a plan that fits your household, school, workplace, and local
+            hazards.
+          </p>
+        </div>
+        <div class="prepare-layout">
+          <div class="terminal-card">
+            <h3>Emergency kit</h3>
+            <ul class="kit-list">
+              <li>Water and shelf-stable food</li>
+              <li>Flashlight, batteries, and power bank</li>
+              <li>First-aid supplies and necessary medication</li>
+              <li>Important documents and contact information</li>
+              <li>Whistle and basic hygiene supplies</li>
+            </ul>
+            <p class="small-note">
+              This is a starting list, not a universally sufficient kit.
+            </p>
+          </div>
+          <div class="terminal-card checklist-card">
+            <h3>Preparedness checklist</h3>
+            <p class="small-note">
+              Stored on this device. No personal information is collected.
+            </p>
+            <div id="checklist"></div>
+          </div>
+        </div>
+        <div class="scenario terminal-card">
+          <div>
+            <p class="eyebrow">Learn a scenario</p>
+            <h3 id="scenario-title">Scenario 01</h3>
+            <p id="scenario-question"></p>
+          </div>
+          <div id="scenario-options" class="scenario-options"></div>
+          <div id="scenario-feedback" class="feedback" aria-live="polite"></div>
+          <button id="next-scenario" class="cta-button" type="button" hidden>
+            Try another scenario
+          </button>
+        </div>
+      </section>
+      <section
+        id="hotlines"
+        class="guide-section"
+        aria-labelledby="hotlines-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Verified directory / 04</p>
+          <h2 id="hotlines-title">Emergency hotlines</h2>
+          <p>
+            Select a region to view contacts. Numbers are shown only where a
+            source has been identified.
+          </p>
+        </div>
+        <label class="select-label" for="location-select">Location</label
+        ><select id="location-select" class="terminal-select">
+          <option value="philippines">Philippines</option>
+          <option value="unverified">Other region / verify locally</option>
+        </select>
+        <div id="hotline-list" class="hotlines-grid"></div>
+        <p class="last-verified">
+          Last verified: source review required before publication
+        </p>
+      </section>
+      <section
+        class="search-section guide-section"
+        aria-labelledby="search-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">Knowledge base</p>
+          <h2 id="search-title">Search emergency guides</h2>
+        </div>
+        <label class="sr-only" for="search-input"
+          >Search first aid, emergencies, preparedness, and hotlines</label
+        ><input
+          id="search-input"
+          class="terminal-input"
+          type="search"
+          placeholder="> type to search..."
+          autocomplete="off"
+        />
+        <div
+          id="search-results"
+          class="search-results"
+          aria-live="polite"
+        ></div>
+      </section>
+      <aside class="disclaimer info-box" aria-labelledby="disclaimer-title">
+        <h2 id="disclaimer-title">Important</h2>
+        <p>
+          Golden Hour is an educational preparedness resource. It does not
+          replace professional medical care, emergency dispatchers, trained
+          first responders, or formal first-aid training. In a serious or
+          life-threatening emergency, contact local emergency services and
+          follow qualified instructions.
+        </p>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <strong>Golden Hour</strong><span>Learn. Prepare. Respond.</span
+      ><span>Educational resource, not emergency dispatch.</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
